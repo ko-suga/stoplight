@@ -37,3 +37,27 @@
 #     - /^test/ # all builds starting with "test"
 #   ignored_projects:
 #     - not_me  # ignore the project named "not_me"
+
+# Example Icinga configuration
+# -
+#   type: 'icinga'
+#   url: http://icinga.example.com
+#   kind: service # or host
+#   apikey: my_apikey
+#   projects:
+#     - web01.example.com # host named "web01.example.com"
+#     - /^monitoring01/   # all hosts ors services starting with "monitoring01"
+#   ignored_projects:
+#     - /^stg-/  # ignore the hosts and services  starting with "stg-"
+
+# Example Monit configuration
+# -
+#   type: 'monit'
+#   url: http://monit.example.com
+#   username: admin
+#   password: monit
+#   projects:
+#     - web01.example.com # host named "web01.example.com"
+#     - /^monitoring01/   # all hosts ors services starting with "monitoring01"
+#   ignored_projects:
+#     - /^stg-/  # ignore the hosts and services  starting with "stg-"
