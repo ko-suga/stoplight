@@ -15,7 +15,7 @@
 
     Projects.prototype.model = Models.Project;
 
-    Projects.prototype.url = '/projects.json';
+    Projects.prototype.url = 'projects.json';
 
     Projects.prototype.failing_watched_projects = function() {
       return this.where({

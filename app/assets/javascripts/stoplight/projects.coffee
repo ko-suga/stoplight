@@ -2,7 +2,7 @@
 
 class Collections.Projects extends Backbone.Collection
   model: Models.Project
-  url: '/projects.json'
+  url: 'projects.json'
 
   failing_watched_projects: ->
     @where({last_build_status: 'failed', ignored: false})
